@@ -1,0 +1,401 @@
+$top-bar-background: #ffffff;
+$white: #ffffff;
+$background-color: #6b1a3a;
+$link-color: #732443;
+$link-bordercolor: #f67f00;
+$link-border: 3px solid $link-bordercolor;
+
+body {
+  background: white;
+  font-size: 16px;
+  font-family: ProximaNova-Regular;
+}
+
+.title-bar {
+  background-color: #ffffff;
+}
+
+.top-bar {
+  padding: 0px;
+  margin-bottom: -20px;
+
+  background-color: $top-bar-background;
+
+  ul {
+    background-color: $top-bar-background;
+
+    .is-active {
+      border-bottom: $link-border;
+      a {
+        background: $top-bar-background;
+      }
+    }
+  }
+
+  .top-bar-right {
+    padding: 0px;
+    background: $top-bar-background;
+    a {
+      color: $link-color;
+    }
+    img {
+      height: 40px;
+
+    }
+  }
+  .top-bar-left {
+    padding: 0px;
+    img {
+      height: 44px;
+      margin: -4px auto;
+
+    }
+  }
+}
+
+.index {
+  height: 570px;
+  background-image: url("/images/index.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .grid-container {
+    height: 570px;
+
+  }
+
+
+  .index-content {
+    position: relative;
+    top: 50%;
+    p {
+
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      text-align: left;
+      color: #fefefe;
+
+      line-height: 1.3em;
+
+      font-size: 36px;
+      font-weight: 200;
+
+      letter-spacing: 1px;
+      margin-top: 25px;
+
+    }
+
+    button {
+      background: $link-bordercolor;
+      color: $white;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 40px;
+
+    }
+  }
+}
+
+.nse-rates-ticker {
+
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+  .nse-title {
+    padding: 10px;
+    background: $background-color;
+    color: $white;
+    p {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+  .nse-content {
+    padding: 10px;
+    .nse-list li a {
+      text-transform: uppercase;
+      color: #6c6c6c;
+      #backlays {
+        color: #002dff;
+      }
+      #bihl {
+        color: #fd1000;
+      }
+      #btcl {
+        color: #ab18e8;
+      }
+      #chobe {
+        color: #ffb400;
+      }
+      #choppies {
+        color: #138b03;
+      }
+      #cresta {
+        color: #fa6969;
+      }
+    }
+  }
+}
+
+.stock-brokage {
+  margin-bottom: 50px;
+  margin-top: 70px;
+
+  .stock-brokage-left {
+    height: 350px;
+    background-color: $background-color;
+    font-color: $white;
+    padding: 50px;
+    button {
+
+    }
+
+    h4 {
+      color: #ffffff;
+    }
+    p {
+      color: #ffffff;
+      font-size: 1.2em;
+      font-weight: 200;
+      margin-bottom: 40px;
+    }
+
+    button {
+      background: $link-bordercolor;
+      color: $white;
+      font-size: 14px;
+      margin-top: 15px;
+      font-weight: 400;
+
+    }
+  }
+  .stock-brokage-right {
+    height: 350px;
+    font-color: $white;
+    padding: 50px;
+    background: #cccccc;
+    background-image: url("/images/phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .mobileTitle {
+    color: white;
+    font-size: 28px;
+    margin-top: 230px;
+    margin-left: -25px;
+
+  }
+}
+
+.in-the-news {
+  background: #f7f7f7;
+  .grid-container {
+    padding-bottom: 40px;
+  }
+
+  .news-title {
+    h5 {
+      padding-top: 50px;
+      text-transform: uppercase;
+      color: #3d3d3d;
+      font-weight: 500;
+      margin-bottom: 0px;
+    }
+
+  }
+
+  .more-btn {
+    a {
+      float: right;
+      margin-top: 30px;
+      background-color: #dbdbdb;
+      font-color: #000000;
+    }
+
+  }
+
+}
+
+.news-content {
+
+  .card {
+    height: 360px;
+    .card-divider {
+      background-color: #4f132c;
+      color: $white;
+      height: 180px;
+      .news-head {
+        padding: 30px;
+      }
+      .news-head {
+        text-transform: uppercase;
+      }
+    }
+    .card-section {
+      height: 180px;
+      p {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 250;
+        color: #292929;
+      }
+      .card-footer {
+        margin-bottom: 0px;
+        p {
+          font-size: 12px;
+          text-align: right;
+          color: #818181;
+        }
+      }
+    }
+
+  }
+}
+
+.fixed-income {
+  background: white;
+  height: 400px;
+  background-color: #e9e2e5;
+  background-image: url("/images/home.jpg");
+  background-size: cover;
+
+  .fixed-income-left {
+    height: 400px;
+  }
+  .fixed-income-right {
+    height: 250px;
+    position: relative;
+    margin-top: -5%;
+    border-top: 5px solid #f87e01;
+    background-color: #561533;
+    opacity: 0.8;
+    color: $white;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 200;
+      color: #fefefe;
+      line-height: 1.3;
+      letter-spacing: 1px;
+      margin-top: 25px;
+    }
+    button {
+      background-color: $link-bordercolor;
+      margin-top: 20px;
+    }
+
+  }
+
+}
+
+.our-fiduciary {
+  background: white;
+
+  .fiduciary-title {
+    height: 450px;
+    padding-top: 50px;
+
+    font-size: 36px;
+    font-weight: 200;
+    color: #444444;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    margin-top: 25px;
+
+    padding: 20px;
+    h2 {
+      font-size: 36px;
+      font-weight: 200px;
+      color: #444444;
+      margin-top: 25px;
+    }
+    button {
+      background: #000000;
+      margin-top: 15px;
+      padding: 15px;
+
+    }
+  }
+  .fiduciary-image {
+    height: 450px;
+    background-image: url("/images/map.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+}
+
+.footer-section {
+  background: #000000;
+  color: #ffffff;
+
+  hr {
+    border-bottom: 1px solid #343434;
+    margin-top: 20px;
+
+  }
+
+  .upper-foot {
+    padding-top: 50px;
+    ul {
+      float: left;
+      li {
+        line-height: 1.5em;
+      }
+
+    }
+    .footer-inquires {
+      .title {
+
+        color: $link-bordercolor;
+        text-align: left;
+        width: 300px;
+        float: right;
+      }
+
+    }
+  }
+
+  .businessfoot {
+    img {
+      float: right;
+    }
+  }
+
+  .footer-links {
+    padding-top: 20px;
+
+    .businessfoot1 {
+      ul {
+        line-height: 2.2em;
+      }
+    }
+  }
+  .lower-foot {
+    .column {
+      padding-top: 20px;
+      .title {
+        color: $white;
+        font-weight: 500;
+        width: 300px;
+        float: right;
+
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
