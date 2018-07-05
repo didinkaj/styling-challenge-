@@ -3,7 +3,7 @@ $white: #ffffff;
 $background-color: #6b1a3a;
 $link-color: #732443;
 $link-bordercolor: #f67f00;
-$link-border: 3px solid $link-bordercolor;
+$link-border: 4px solid $link-bordercolor;
 
 body {
   background: white;
@@ -16,16 +16,17 @@ body {
 }
 
 .top-bar {
-  padding: 0px;
+  padding: 0;
   margin-bottom: -20px;
-
   background-color: $top-bar-background;
 
   ul {
     background-color: $top-bar-background;
+    font-size: 14px;
 
     .is-active {
       border-bottom: $link-border;
+      margin-bottom: -19px;
       a {
         background: $top-bar-background;
       }
@@ -33,22 +34,28 @@ body {
   }
 
   .top-bar-right {
-    padding: 0px;
+    padding: 0;
     background: $top-bar-background;
     a {
       color: $link-color;
     }
     img {
-      height: 40px;
+      height: 50px;
 
     }
   }
   .top-bar-left {
-    padding: 0px;
+    padding: 0;
     img {
-      height: 44px;
+      height: 50px;
       margin: -4px auto;
 
+    }
+    button {
+      background-color: $link-bordercolor;
+      .menu-icon {
+        background-color: red;
+      }
     }
   }
 }
@@ -65,12 +72,10 @@ body {
 
   }
 
-
   .index-content {
     position: relative;
     top: 50%;
     p {
-
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
@@ -93,6 +98,7 @@ body {
       font-size: 14px;
       font-weight: bold;
       margin-top: 40px;
+      padding: 15px;
 
     }
   }
@@ -102,12 +108,15 @@ body {
 
   margin-bottom: 30px;
   background-color: #f7f7f7;
+  min-height: 50px;
   .nse-title {
     padding: 10px;
     background: $background-color;
     color: $white;
     p {
       position: relative;
+      font-size: 12px;
+      font-weight: 800;
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -115,10 +124,12 @@ body {
     }
   }
   .nse-content {
-    padding: 10px;
+    padding: 5px 5px 5px 5px;
     .nse-list li a {
       text-transform: uppercase;
-      color: #6c6c6c;
+      color: #2f2f2f;
+      font-size: 16px;
+      font-weight:200;
       #backlays {
         color: #002dff;
       }
@@ -142,41 +153,40 @@ body {
 }
 
 .stock-brokage {
-  margin-bottom: 50px;
-  margin-top: 70px;
+  margin-bottom: 35px;
 
   .stock-brokage-left {
-    height: 350px;
+    min-height: 310px;
     background-color: $background-color;
-    font-color: $white;
-    padding: 50px;
-    button {
-
-    }
-
+    color: $white;
+    padding: 40px 40px 0px 40px;
     h4 {
       color: #ffffff;
     }
     p {
       color: #ffffff;
-      font-size: 1.2em;
-      font-weight: 200;
-      margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 1.2em;
+      padding: 10px;
+      font-weight: lighter;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
     }
 
     button {
       background: $link-bordercolor;
       color: $white;
       font-size: 14px;
-      margin-top: 15px;
-      font-weight: 400;
+      font-weight: bold;
+      margin-top: 25px;
+      padding: 15px;
 
     }
   }
   .stock-brokage-right {
-    height: 350px;
-    font-color: $white;
-    padding: 50px;
+    height: 310px;
+    color: $white;
+    padding: 40px;
     background: #cccccc;
     background-image: url("/images/phone.jpg");
     background-repeat: no-repeat;
@@ -185,8 +195,9 @@ body {
   }
   .mobileTitle {
     color: white;
+    position: relative;
     font-size: 28px;
-    margin-top: 230px;
+    margin-top: 40%;
     margin-left: -25px;
 
   }
@@ -200,7 +211,7 @@ body {
 
   .news-title {
     h5 {
-      padding-top: 50px;
+      padding-top: 30px;
       text-transform: uppercase;
       color: #3d3d3d;
       font-weight: 500;
@@ -214,7 +225,9 @@ body {
       float: right;
       margin-top: 30px;
       background-color: #dbdbdb;
-      font-color: #000000;
+      color: #3d3d3d;
+      font-weight: 300;
+      padding: 15px;
     }
 
   }
@@ -224,24 +237,26 @@ body {
 .news-content {
 
   .card {
-    height: 360px;
+    min-height: 280px;
     .card-divider {
       background-color: #4f132c;
       color: $white;
-      height: 180px;
+      height: 150px;
       .news-head {
-        padding: 30px;
-      }
-      .news-head {
+        padding: 30px 10px 30px 30px;
         text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 500;
       }
     }
     .card-section {
-      height: 180px;
+      min-height: 150px;
       p {
-        padding: 10px;
-        font-size: 20px;
-        font-weight: 250;
+        padding: 4px 30px 4px 10px;
+
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 1.2em;
         color: #292929;
       }
       .card-footer {
@@ -249,6 +264,7 @@ body {
         p {
           font-size: 12px;
           text-align: right;
+          padding-bottom: 5px;
           color: #818181;
         }
       }
@@ -258,22 +274,21 @@ body {
 }
 
 .fixed-income {
-  background: white;
-  height: 400px;
+  min-height: 450px;
   background-color: #e9e2e5;
   background-image: url("/images/home.jpg");
   background-size: cover;
 
   .fixed-income-left {
-    height: 400px;
+    min-height: 450px;
   }
   .fixed-income-right {
-    height: 250px;
+    min-height: 300px;
     position: relative;
-    margin-top: -5%;
     border-top: 5px solid #f87e01;
     background-color: #561533;
-    opacity: 0.8;
+    opacity: 0.9;
+    padding: 10px 40px;
     color: $white;
 
     h2 {
@@ -287,19 +302,18 @@ body {
     button {
       background-color: $link-bordercolor;
       margin-top: 20px;
+      color: #ffffff;
+      font-weight: 300;
+      padding: 15px;
     }
-
   }
-
 }
 
 .our-fiduciary {
   background: white;
 
   .fiduciary-title {
-    height: 450px;
-    padding-top: 50px;
-
+    min-height: 450px;
     font-size: 36px;
     font-weight: 200;
     color: #444444;
@@ -310,7 +324,7 @@ body {
     padding: 20px;
     h2 {
       font-size: 36px;
-      font-weight: 200px;
+      font-weight: 200;
       color: #444444;
       margin-top: 25px;
     }
@@ -343,47 +357,97 @@ body {
 
   .upper-foot {
     padding-top: 50px;
-    ul {
-      float: left;
-      li {
-        line-height: 1.5em;
+    .social-button {
+      ul {
+        float: left;
+        li {
+          line-height: 1.5em;
+        }
       }
 
+      .social-title {
+        h6 {
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
     }
-    .footer-inquires {
-      .title {
 
+    .footer-inquires {
+
+      .title {
         color: $link-bordercolor;
         text-align: left;
         width: 300px;
         float: right;
+        font-size: 16px;
+        font-weight: 800;
       }
 
-    }
-  }
-
-  .businessfoot {
-    img {
-      float: right;
     }
   }
 
   .footer-links {
     padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 14px;
 
     .businessfoot1 {
       ul {
-        line-height: 2.2em;
+        line-height: 2.5em;
+      }
+      h6 {
+        font-weight: 600;
+        size: 16px;
+      }
+
+    }
+    .businessfoot2 {
+
+    }
+    .businessfoot3 {
+      .footer-logo {
+        float: right;
+        color: #3c3c3c;
+
+      }
+      .subscribeform {
+        position: relative;
+        margin-top: 60px;
+        input {
+          background-color: #1a1a1a;
+          border-color: #1a1a1a;
+          padding: 15px;
+          height: 50px;
+        }
+        .button {
+          background-color: $link-bordercolor;
+          width: 100%;
+          color: $background-color;
+          .btn {
+            color: white;
+
+
+          }
+        }
+
+      }
+      .subscribe-title {
+        font-size: 16px;
+        font-weight: 600;
       }
     }
+
   }
   .lower-foot {
-    .column {
-      padding-top: 20px;
+    font-size: 14px;
+    .copyright {
+      padding-top: 15px;
       .title {
         color: $white;
-        font-weight: 500;
+        font-weight: 200;
         width: 300px;
+
         float: right;
 
       }
@@ -393,6 +457,7 @@ body {
   }
 
 }
+
 
 
 
