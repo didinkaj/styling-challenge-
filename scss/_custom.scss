@@ -51,11 +51,12 @@ body {
       margin: -4px auto;
 
     }
-    button {
-      background-color: $link-bordercolor;
-      .menu-icon {
-        background-color: red;
-      }
+
+  }
+  button {
+    background-color: $link-bordercolor;
+    .menu-icon {
+      background-color: red;
     }
   }
 }
@@ -280,13 +281,13 @@ body {
 }
 
 .fixed-income {
-  min-height: 450px;
+  min-height: 440px;
   background-color: #e9e2e5;
   background-image: url("/images/home.jpg");
   background-size: cover;
 
   .fixed-income-left {
-    min-height: 450px;
+    min-height: 440px;
   }
   .fixed-income-right {
     min-height: 300px;
@@ -361,9 +362,9 @@ body {
   }
 
   .upper-foot {
-    padding: 50px 0px 50px 0px;
+    padding-top: 20px;
     .social-button {
-      
+
       ul {
         float: left;
         li {
@@ -375,6 +376,10 @@ body {
         h6 {
           font-weight: 500;
           font-size: 14px;
+          padding-top: 50px;
+        }
+        img{
+          padding-top: 10px;
         }
       }
     }
@@ -388,6 +393,7 @@ body {
         float: right;
         font-size: 16px;
         font-weight: 800;
+        padding-top: 50px;
       }
 
     }
@@ -415,6 +421,10 @@ body {
       .footer-logo {
         float: right;
         color: #3c3c3c;
+        img{
+          height: 100px;
+        }
+
 
       }
       .subscribeform {
@@ -425,6 +435,10 @@ body {
           border-color: #1a1a1a;
           padding: 15px;
           height: 50px;
+
+        }
+        input[placeholder]{
+          color: #747474;
         }
         .button {
           background-color: $link-bordercolor;
@@ -432,6 +446,7 @@ body {
           color: $background-color;
           .btn {
             color: white;
+            margin-top: 20px;
 
 
           }
@@ -441,6 +456,7 @@ body {
       .subscribe-title {
         font-size: 16px;
         font-weight: 600;
+
       }
     }
 
